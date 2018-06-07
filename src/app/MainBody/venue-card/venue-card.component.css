@@ -1,0 +1,14 @@
+.location-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.venue-card-wrapper {
+  height: 12vh;
+  width: 30vw;
+}
+
+.location-wrapper {
+  padding: 5px;
+}

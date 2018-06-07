@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import {FoursquareService} from '../../services/foursquare.service';
-import {ApiConfigService} from '../../services/api-config.service';
+
+import {VenueModel, VenueResponse} from '../../view-model/venueModel';
 
 @Component({
   selector: 'app-activity-feed',
@@ -16,7 +17,6 @@ export class ActivityFeedComponent implements OnInit {
   ngOnInit() {
     this.fSquare.getVenues().subscribe(res => {
       this.venues = res.response.groups[0].items;
-      console.log(this.venues);
     });
   }
 
